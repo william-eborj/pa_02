@@ -1,0 +1,500 @@
+body{
+background-image: url(cafe-macchiato.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+html, body{
+height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+#contenedor{
+background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('cafe-macchiato.jpg');
+min-height: 100vh;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: whitesmoke;
+padding: 20px;
+}
+
+
+
+header h1{
+font-size: 4.2rem;
+font-style: italic;
+font-weight: 700;
+letter-spacing: 4px;
+margin-bottom: 15px;
+text-shadow: 2px 2px 4px;
+text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+
+}
+
+#contenedor > p {
+    font-size: 2.1rem;
+    max-width: 650px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    color: #e0e0e0;
+    font-family: Helvetica;
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+#menu li a:hover {
+    color: rgba(92, 90, 90, 0.956); 
+}
+
+
+
+#menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+footer {
+    margin-top: 10px;
+}
+
+#redes p {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    color: #cccccc;
+}
+
+#redes a {
+    color: rgb(237, 233, 233);
+    font-size: 1.8rem;
+    margin: 0 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#redes a:hover {
+    transform: scale(1.2);
+    color: #585653;
+}
+
+
+/*BLOG CSS*/
+
+
+body.bloghtml {
+    background-image: none !important;
+    background-color: aliceblue !important;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#contenedorblog {
+    display: flex;
+    flex-direction: column; /* Apila el menú y el contenido principal verticalmente */
+    min-height: 100vh;
+    background: transparent;
+}
+
+/* ==========================================
+   1. MENÚ STICKY PERFECTO
+   ========================================== */
+#headerblog {
+    position: sticky;
+    top: 0;
+    background-color: #9a663c; /* Fondo blanco sólido para que no transparente */
+    z-index: 1000;             /* Mantiene el menú por encima al hacer scroll */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Centra el título y el menú horizontalmente */
+    justify-content: center;
+    
+    padding: 20px 0;
+    border-bottom: 1px solid #eaeaea;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra elegante opcional */
+}
+
+#menusasoblog {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+#menublog {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+#menublog li a {
+    text-decoration: none;
+    color: rgb(31, 112, 225);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#menublog li a:hover {
+    transform: scale(1,2);
+    color: cadetblue;
+}
+
+
+
+
+
+
+
+
+.main-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Centra la imagen y el texto perfectamente en medio */
+    justify-content: flex-start;
+    padding: 40px 20px;        /* Espaciado superior para que no pegue con el menú */
+    flex: 1;                   }
+
+/* Estilo para centrar y dimensionar la imagen */
+.imagen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;          /* Ancho máximo para que no se expanda de más */
+    margin-bottom: 30px;       /* Espacio entre la imagen y el texto */
+}
+
+.img-blog {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;        /* Bordes sutilmente redondeados */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Estilo del bloque de texto */
+#textosblog {
+    max-width: 700px;          /* Ancho ideal para lectura cómoda */
+    text-align: justify;       /* Texto justificado u organizado al centro si prefieres */
+    color: #333333;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+#fotasolol {
+    display: flex;
+    justify-content: right; /* Centra el grupo horizontalmente */
+    align-items: flex-start; /* ALINEA AMBOS ELEMENTOS EN LA PARTE SUPERIOR */
+    gap: 40px;               /* Distancia entre la imagen y el autor */
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+/* Bloque izquierdo de la imagen grande */
+.bloque-imagen {
+    flex: 1;                 /* Permite que crezca para ocupar espacio */
+    max-width: 650px;       /* Ancho máximo de la imagen grande */
+    display: flex;
+    justify-content: center;
+}
+
+.img-grande {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;      /* Mantiene los bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* Sección del Autor (Bloque Derecho) */
+.seccion-autor {
+    width: 250px;           /* Ancho fijo para el bloque del autor */
+    display: flex;
+    flex-direction: column;  /* Apila la foto y el texto en columna */
+    align-items: center;    /* Centra la foto y el texto internamente */
+    text-align: center;      /* Centra el texto */
+    padding: 20px;
+}
+
+/* Contenedor para la foto circular */
+.autor-circulo {
+    width: 150px;           /* Diámetro del círculo */
+    height: 150px;          /* Diámetro del círculo */
+    overflow: hidden;        /* Recorta cualquier desborde */
+    border-radius: 50%;      /* ¡EL SECRETO DEL CÍRCULO! */
+    margin-bottom: 20px;    /* Espacio entre la foto y el nombre */
+    border: 5px solid white; /* Borde decorativo blanco opcional */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    
+    display: flex;          /* Para centrar la imagen interna */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.foto-perfil {
+    width: 100%;            /* Ocupa todo el contenedor circular */
+    height: 100%;           /* Ocupa todo el contenedor circular */
+    object-fit: cover;       /* Evita que la foto se estire */
+    
+    /* ¡AQUÍ ESTÁ EL TRUCO PARA QUE SE VEA EL OJO Y LA CARA! */
+    object-position: 50% 30%; /* Controla el encuadre (Eje X, Eje Y) */
+   
+  }
+
+#redesblog {
+    display: flex;          /* Convierte al contenedor principal en flexible */
+    justify-content: center; /* Centra los iconos horizontalmente en el medio */
+    align-items: center;    /* Centra verticalmente */
+    gap: 20px;              /* Espacio uniforme entre cada icono de red social */
+    width: 100%;
+    margin: 40px auto;      /* Margen arriba/abajo para separar de las fotos */
+    padding: 0;
+}
+
+#redesblog a {
+    color: rgb(30, 178, 211);
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto opcional al pasar el cursor sobre los iconos */
+#redesblog a:hover {
+    transform: scale(1.15); /* Crece ligeramente al pasar el mouse */
+    color: #000080;
+}
+
+
+
+
+
+
+
+
+
+  /*CSS DE GALERIA*/
+
+
+
+
+#headergaleria {
+    position: sticky;
+    top: 0;
+    background-color: #9a663c; /* Fondo blanco sólido para que no transparente */
+    z-index: 1000;             /* Mantiene el menú por encima al hacer scroll */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Centra el título y el menú horizontalmente */
+    justify-content: center;
+    
+    padding: 20px 0;
+    border-bottom: 1px solid #eaeaea;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra elegante opcional */
+}
+
+/* Aseguramos que el cuerpo ocupe toda la pantalla y tenga el fondo base */
+body.galeriahtml {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Color de respaldo por si tarda en cargar la imagen */
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal que abarca toda la página con el fondo de la cafetería */
+#contenedorgaleria {
+    /* El truco de background-attachment: fixed hace que la imagen sea un telón de fondo fijo elegante */
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../cafe-macchiato.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    width: 100%;
+    min-height: 100vh; /* Ocupa al menos toda la altura de la ventana */
+    padding-bottom: 60px; /* Espacio al final para que las fotos no queden pegadas al borde */
+}
+
+/* Estructura limpia para las filas de imágenes */
+#primeralineadeimg,
+#segundalineadeimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;              /* Espacio horizontal entre las fotos */
+    flex-wrap: wrap;        /* Permite que bajen si la pantalla es estrecha */
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 50px;
+}
+
+/* Tamaño uniforme y elegante para todas las imágenes de la galería */
+#primeralineadeimg img,
+#segundalineadeimg img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;      /* Evita que las fotos se estiren o distorsionen */
+    border-radius: 8px;     /* Bordes redondeados */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6); /* Sombra marcada para destacar sobre el fondo */
+    transition: transform 0.3s ease;
+    filter: grayscale(70%);
+}
+
+#primeralineadeimg img:hover,
+#segundalineadeimg img:hover {
+    transform: scale(1.04); /* Pequeño zoom al pasar el cursor */
+    filter: grayscale(0%);
+
+}
+
+#redesgaleria {
+    display: flex;          /* Convierte al contenedor principal en flexible */
+    justify-content: center; /* Centra los iconos horizontalmente en el medio */
+    align-items: center;    /* Centra verticalmente */
+    gap: 20px;              /* Espacio uniforme entre cada icono de red social */
+    width: 100%;
+    margin: 40px auto;      /* Margen arriba/abajo para separar de las fotos */
+    padding: 0;
+}
+
+#redesgaleria a {
+    color: rgb(237, 233, 233);
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto opcional al pasar el cursor sobre los iconos */
+#redesgaleria a:hover {
+    transform: scale(1.15); /* Crece ligeramente al pasar el mouse */
+    color: #000080;
+}
+
+
+
+/* CSS DE LOS VIDEOS */
+
+body.videoshtml {
+    background-image: none !important;
+    background-color: beige !important;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#contenedorvideos {
+    display: flex;
+    flex-direction: column; /* Apila el menú y el contenido principal verticalmente */
+    min-height: 100vh;
+    background: transparent;
+}
+
+/* ==========================================
+   1. MENÚ STICKY PERFECTO
+   ========================================== */
+#headervideos {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #9a663c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0 8px 0; /* Controla el espacio superior e inferior general */
+    border-bottom: 1px solid #eaeaea;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* 2. Título de la marca (HAKUREI COFFEES) */
+#menusasovideos {
+    font-size: 3.2rem;
+    font-style: italic;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 3. Contenedor horizontal del menú (Elimina puntos y centra) */
+#menuvideos {
+    display: flex;          
+    justify-content: center;
+    list-style: none;       /* Elimina los puntos negros */
+    gap: 30px;              /* Espacio horizontal entre las opciones */
+    padding: 0;
+    margin: 5px 0 0 0;      /* Margen superior pequeño para acercarlo al título */
+}
+
+/* 4. Estilo y tamaño de los enlaces del menú */
+#menuvideos li a {
+    color: rgb(27, 108, 220);
+    text-decoration: none;
+    font-size: 1rem;        /* Tamaño mediano y elegante */
+    font-weight: 500;       
+    text-transform: none;   
+    transition: color 0.3s ease;
+}
+#menuvideos li a:hover {
+    color: rgba(57, 220, 217, 0.956); 
+}
+
+
+#textosvideouno{
+text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+}
+
+
+#videodos{
+text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+}
+
+
+
+
+
+
+
+
