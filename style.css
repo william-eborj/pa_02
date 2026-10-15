@@ -1,5 +1,5 @@
 body{
-background-image: url(cafe-macchiato.jpg);
+background-image: url(imagenes/cafe-macchiato.jpg);
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -122,9 +122,9 @@ body.bloghtml {
     background: transparent;
 }
 
-/* ==========================================
-   1. MENÚ STICKY PERFECTO
-   ========================================== */
+
+   
+   
 #headerblog {
     position: sticky;
     top: 0;
@@ -138,7 +138,7 @@ body.bloghtml {
     
     padding: 20px 0;
     border-bottom: 1px solid #eaeaea;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra elegante opcional */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra  */
 }
 
 #menusasoblog {
@@ -182,7 +182,7 @@ body.bloghtml {
 .main-blog {
     display: flex;
     flex-direction: column;
-    align-items: center;       /* Centra la imagen y el texto perfectamente en medio */
+    align-items: center;       /* Centra la imagen */
     justify-content: flex-start;
     padding: 40px 20px;        /* Espaciado superior para que no pegue con el menú */
     flex: 1;                   }
@@ -200,14 +200,14 @@ body.bloghtml {
 .img-blog {
     width: 100%;
     height: auto;
-    border-radius: 8px;        /* Bordes sutilmente redondeados */
+    border-radius: 8px;        /* Bordes s */
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* Estilo del bloque de texto */
 #textosblog {
-    max-width: 700px;          /* Ancho ideal para lectura cómoda */
-    text-align: justify;       /* Texto justificado u organizado al centro si prefieres */
+    max-width: 700px;          /* Ancho  */
+    text-align: justify;       /* Texto  */
     color: #333333;
     line-height: 1.8;
     font-size: 1.05rem;
@@ -254,7 +254,7 @@ body.bloghtml {
     width: 150px;           /* Diámetro del círculo */
     height: 150px;          /* Diámetro del círculo */
     overflow: hidden;        /* Recorta cualquier desborde */
-    border-radius: 50%;      /* ¡EL SECRETO DEL CÍRCULO! */
+    border-radius: 50%;      /* CÍRCULO! */
     margin-bottom: 20px;    /* Espacio entre la foto y el nombre */
     border: 5px solid white; /* Borde decorativo blanco opcional */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -270,7 +270,7 @@ body.bloghtml {
     height: 100%;           /* Ocupa todo el contenedor circular */
     object-fit: cover;       /* Evita que la foto se estire */
     
-    /* ¡AQUÍ ESTÁ EL TRUCO PARA QUE SE VEA EL OJO Y LA CARA! */
+    /* TRUCO PARA QUE SE VEA EL OJO Y LA CARA! */
     object-position: 50% 30%; /* Controla el encuadre (Eje X, Eje Y) */
    
   }
@@ -292,7 +292,7 @@ body.bloghtml {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Efecto opcional al pasar el cursor sobre los iconos */
+
 #redesblog a:hover {
     transform: scale(1.15); /* Crece ligeramente al pasar el mouse */
     color: #000080;
@@ -361,7 +361,7 @@ body.galeriahtml {
     padding: 0 50px;
 }
 
-/* Tamaño uniforme y elegante para todas las imágenes de la galería */
+
 #primeralineadeimg img,
 #segundalineadeimg img {
     width: 320px;
@@ -422,9 +422,8 @@ body.videoshtml {
     background: transparent;
 }
 
-/* ==========================================
-   1. MENÚ STICKY PERFECTO
-   ========================================== */
+
+
 #headervideos {
     position: sticky;
     top: 0;
@@ -439,7 +438,7 @@ body.videoshtml {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* 2. Título de la marca (HAKUREI COFFEES) */
+
 #menusasovideos {
     font-size: 3.2rem;
     font-style: italic;
@@ -450,7 +449,7 @@ body.videoshtml {
     text-align: center;
 }
 
-/* 3. Contenedor horizontal del menú (Elimina puntos y centra) */
+
 #menuvideos {
     display: flex;          
     justify-content: center;
